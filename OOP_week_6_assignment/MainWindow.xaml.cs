@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SQLite;
+using System.IO;
 
 namespace OOP_week_6_assignment
 {
@@ -16,9 +18,21 @@ namespace OOP_week_6_assignment
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string db = "DB.db";
         public MainWindow()
         {
             InitializeComponent();
+            if (!File.Exists(db))
+            {
+
+            }
+            
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window2 = new MainWindow();
+            window2.Show();
         }
     }
 }
