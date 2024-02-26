@@ -7,7 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="115,105,0,0" VerticalAlignment="Top" Click="btnLogin_Click"/>
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,62,0,0" VerticalAlignment="Top" Click="btnLogin_Click"/>
+        <Label x:Name="label_Username" Content="Username&#xD;&#xA;" HorizontalAlignment="Left" Margin="7,161,0,0" VerticalAlignment="Top" Height="29"/>
+        <Label x:Name="label_Password" Content="Password" HorizontalAlignment="Left" Margin="11,186,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBUsername" HorizontalAlignment="Left" Margin="80,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtBUsername_TextChanged"/>
+        <TextBox x:Name="txtBPassword" HorizontalAlignment="Left" Margin="80,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="DataGrid0" d:ItemsSource="{Binding Source=Dt}" Margin="0,0,0,311" Visibility="Hidden">
+        </DataGrid>
+        <Label x:Name="labelFirstName" Content="First Name" HorizontalAlignment="Left" Margin="11,208,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox x:Name="txtBFirstName" HorizontalAlignment="Left" Margin="80,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Label x:Name="labelLastName" Content="Last Name" HorizontalAlignment="Left" Margin="11,231,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox x:Name="txtBLastName" HorizontalAlignment="Left" Margin="80,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Label x:Name="labelTelephone" Content="Telephone" HorizontalAlignment="Left" Margin="11,252,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox x:Name="txtBTelephone" HorizontalAlignment="Left" Margin="80,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Label x:Name="labelIsAdmin" Content="Is Admin" HorizontalAlignment="Left" Margin="11,275,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <CheckBox x:Name="chkBIsAdmin" Content="" HorizontalAlignment="Left" Margin="80,281,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBox x:Name="txtBId" HorizontalAlignment="Left" Margin="256,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Label x:Name="labelId" Content="ID&#xA;" HorizontalAlignment="Left" Margin="229,161,0,0" VerticalAlignment="Top" Height="29" Visibility="Hidden"/>
+        <Label x:Name="labelById" Content="By ID:" HorizontalAlignment="Left" Margin="229,239,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="280,224,0,0" VerticalAlignment="Top" Click="btnCreate_Click" Visibility="Hidden"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="276,266,0,0" VerticalAlignment="Top" Click="btnUpdate_Click" Visibility="Hidden"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="324,266,0,0" VerticalAlignment="Top" Click="btnDelete_Click" Visibility="Hidden"/>
+        <Label x:Name="labelNoId" Content="No ID:" HorizontalAlignment="Left" Margin="231,199,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
 
     </Grid>
 </Window>
